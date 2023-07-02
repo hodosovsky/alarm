@@ -1,8 +1,8 @@
 {
-  "name": "react-pet-project",
+  "name": "alarm",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hodosovsky.github.io/react-pet-project/",
+  "homepage": "https://hodosovsky.github.io/alarm/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@svg-maps/ukraine": "^1.0.0",
