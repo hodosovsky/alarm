@@ -28,10 +28,8 @@ export const App = () => {
     refetchOnFocus: true,
     refetchOnReconnect: true,
   });
-  console.log('data:', data);
-  console.log('Ukraine:', Ukraine);
+
   const dataStr = data?.map(el => regIdToName(el.regionId));
-  console.log('dataStr:', dataStr);
 
   return (
     <SVGMap
