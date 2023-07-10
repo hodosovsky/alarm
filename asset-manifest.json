@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/alarm/static/css/main.fba17846.css",
-    "main.js": "/alarm/static/js/main.474f6ae6.js",
+    "main.js": "/alarm/static/js/main.a946c156.js",
     "index.html": "/alarm/index.html",
     "main.fba17846.css.map": "/alarm/static/css/main.fba17846.css.map",
-    "main.474f6ae6.js.map": "/alarm/static/js/main.474f6ae6.js.map"
+    "main.a946c156.js.map": "/alarm/static/js/main.a946c156.js.map"
   },
   "entrypoints": [
     "static/css/main.fba17846.css",
-    "static/js/main.474f6ae6.js"
+    "static/js/main.a946c156.js"
   ]
 }
