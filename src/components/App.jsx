@@ -1,16 +1,11 @@
 // import styled from 'styled-components';
-// import { Button } from './Button/Button';
-// import { AiFillAndroid, AiFillCar } from 'react-icons/ai';
-// import { RotatingLines } from 'react-loader-spinner';
-// import { Box } from './Box/Box';
-// import { useGetAlarmsQuery } from 'redux/alarmSlice';
-
 import Ukraine from '@svg-maps/ukraine';
-
 import { SVGMap } from 'react-svg-map';
 import 'react-svg-map/lib/index.css';
 import { useGetAlarmsQuery } from 'redux/alarmSlice';
 import { regIdToName } from 'regIdToName.js/regIdToName';
+import { Box } from './Box/Box';
+// import { RotatingLines } from 'react-loader-spinner';
 
 // const Text = styled.p`
 //   /* color: ${p => p.theme.colors.primary}; */
@@ -32,11 +27,14 @@ export const App = () => {
   const dataStr = data?.map(el => regIdToName(el.regionId));
 
   return (
-    <SVGMap
-      map={Ukraine}
-      locationClassName={el =>
-        dataStr?.includes(el.id) ? 'alarm' : 'svg-map__location'
-      }
-    />
+    <Box as="main">
+      <SVGMap
+        map={Ukraine}
+        locationClassName={el =>
+          dataStr?.includes(el.id) ? 'alarm' : 'svg-map__location'
+        }
+        onLocationMouseOver={e => console.log(e)}
+      />
+    </Box>
   );
 };
